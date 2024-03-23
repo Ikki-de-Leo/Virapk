@@ -1,6 +1,8 @@
 #!/system/bin/sh
 
 clear
+apt-get install figlet
+clear
 
 echo -e "\e[31m"
 figlet "               Virapk"
