@@ -1,5 +1,6 @@
 este es un script para generar un payload para android utilizando metasploit.
 si no tienes instalado metasploit , la herramienta lo hara por vos.
+
 pkg install git
 
 git clone https://github.com/Ikki-de-Leo/Virapk
